@@ -1,0 +1,2 @@
+INSERT INTO xceed.player_registration (team_registration_id, player_id, created_at, updated_at) VALUES (1, 1, '2017-04-27 18:22:22', '2017-04-27 18:22:22');
+INSERT INTO xceed.player_registration (team_registration_id, player_id, created_at, updated_at) VALUES (5, 1, '2017-04-27 18:22:22', '2017-04-27 18:22:22');

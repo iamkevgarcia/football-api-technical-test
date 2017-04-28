@@ -1,0 +1,12 @@
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (1, 'Lionel', 'Bieber', '2017-04-27 18:22:21', '2017-04-27 20:58:27');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (1, 'Andrés', 'Iniesta', '2017-04-27 18:22:21', '2017-04-27 20:58:35');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (1, 'Neymar', 'Junior', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (1, 'Gerard', 'Piqué', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (1, 'Javier', 'Mascherano', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (2, 'Cholo', 'Simeone', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (2, 'Griezman', 'Griezmann', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (3, 'Cristiano', 'Ronaldo', '2017-04-27 18:22:21', '2017-04-27 18:22:21');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (3, 'James', 'Rodríguez', '2017-04-27 18:22:22', '2017-04-27 18:22:22');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (4, 'John', 'Terry', '2017-04-27 18:22:22', '2017-04-27 18:22:22');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (4, 'Eden', 'Hazard', '2017-04-27 18:22:22', '2017-04-27 18:22:22');
+INSERT INTO xceed.player (team_id, name, surname, created_at, updated_at) VALUES (4, 'Justin', 'Bieber', '2017-04-27 20:49:54', '2017-04-27 20:49:54');

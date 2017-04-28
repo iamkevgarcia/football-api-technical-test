@@ -1,0 +1,26 @@
+parameters:
+    football_mgr_bundle.player.handler.class: FootballManagerBundle\Handler\PlayerHandler
+    football_mgr_bundle.player.entity.class: FootballManagerBundle\Entity\Player
+    football_mgr_bundle.competition.handler.class: FootballManagerBundle\Handler\CompetitionHandler
+    football_mgr_bundle.competition.entity.class: FootballManagerBundle\Entity\Competition
+    football_mgr_bundle.team.handler.class: FootballManagerBundle\Handler\TeamHandler
+    football_mgr_bundle.team.entity.class: FootballManagerBundle\Entity\Team
+
+services:
+    football_mgr_bundle.player.handler:
+        class: '%football_mgr_bundle.player.handler.class%'
+        arguments: [ "@doctrine.orm.default_entity_manager", '%football_mgr_bundle.player.entity.class%', '@football_mgr_bundle.form.handler']
+        tags:
+            -  { name: football_mgr_bundle.player.handler, alias: player.handler }
+
+    football_mgr_bundle.competition.handler:
+        class: '%football_mgr_bundle.competition.handler.class%'
+        arguments: [ "@doctrine.orm.default_entity_manager", '%football_mgr_bundle.competition.entity.class%', '@football_mgr_bundle.form.handler']
+        tags:
+            -  { name: football_mgr_bundle.competition.handler, alias: competition.handler }
+
+    football_mgr_bundle.team.handler:
+        class: '%football_mgr_bundle.team.handler.class%'
+        arguments: [ "@doctrine.orm.default_entity_manager", '%football_mgr_bundle.team.entity.class%', '@football_mgr_bundle.form.handler']
+        tags:
+            -  { name: football_mgr_bundle.team.handler, alias: team.handler }

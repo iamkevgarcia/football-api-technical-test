@@ -1,0 +1,8 @@
+app_player_competition:
+    resource: "routes/player_competition.yml"
+
+app_player:
+    resource: "routes/player.yml"
+
+app_team:
+    resource: "routes/team.yml"

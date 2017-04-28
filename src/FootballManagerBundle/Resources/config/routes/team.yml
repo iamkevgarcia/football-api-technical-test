@@ -1,0 +1,6 @@
+team_with_players_in_competition:
+    path:     /competition/{competition}/teams
+    defaults: { _controller: FootballManagerBundle:TeamRegistration:getTeamsWithPlayersInAGivenCompetition }
+    methods:  [GET]
+    requirements:
+        competition: \d+

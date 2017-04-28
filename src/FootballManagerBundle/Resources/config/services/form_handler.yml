@@ -1,0 +1,5 @@
+services:
+    football_mgr_bundle.form.handler:
+        class: FootballManagerBundle\Form\Handler\FormHandler
+        arguments:
+            - "@form.factory"

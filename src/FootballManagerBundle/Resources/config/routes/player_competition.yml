@@ -1,0 +1,13 @@
+competitions_by_player:
+    path:     /{player}/competitions
+    defaults: { _controller: FootballManagerBundle:PlayerCompetition:getCompetitionsByPlayer }
+    methods:  [GET]
+    requirements:
+        player: \d+
+
+players_by_competition:
+    path:     /competition/{competition}/players
+    defaults: { _controller: FootballManagerBundle:PlayerCompetition:getPlayersByCompetition }
+    methods:  [GET]
+    requirements:
+        competition: \d+

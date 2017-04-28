@@ -1,0 +1,18 @@
+@startuml
+
+class team << (C,white) >>
+class player << (C,white) >>
+class competition << (C,white) >>
+class team_registration << (C,white) >>
+class player_registration << (C,white) >>
+
+hide empty fields
+hide empty methods
+
+team "0..1" --{ player
+competition --{ team_registration
+team_registration }-- team
+team_registration --{ player_registration
+player_registration }-- player
+
+@enduml

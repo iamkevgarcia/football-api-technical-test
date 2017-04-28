@@ -1,0 +1,30 @@
+player_post:
+    path:     /player/create
+    defaults: { _controller: FootballManagerBundle:Player:post }
+    methods:  [POST]
+
+player_patch:
+    path:     /player/{id}/update
+    defaults: { _controller: FootballManagerBundle:Player:patch }
+    methods:  [PATCH]
+    requirements:
+        id: \d+
+
+player_delete:
+    path:     /player/{id}/delete
+    defaults: { _controller: FootballManagerBundle:Player:delete }
+    methods:  [DELETE]
+    requirements:
+        id: \d+
+
+player_by_field:
+    path:     /player-search/{field_name}/{field_value}
+    defaults: { _controller: FootballManagerBundle:Player:searchByField }
+    methods: [GET]
+
+player_by_team_and_field:
+    path:     /player-search/team/{team}/{field_name}/{field_value}
+    defaults: { _controller: FootballManagerBundle:Player:searchByFieldInSpecifiedTeam }
+    methods: [GET]
+    requirements:
+        team: \d+
